@@ -18,7 +18,10 @@ public class ModItemGroup {
                     .displayName(Text.translatable("itemgroup.owlmod.owl_mod_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.OWL_FEATHER);
-                        entries.add(ModItems.OWL_MEAT);
+                        entries.add(ModItems.OWL_RAW_MEAT);
+                        entries.add(ModItems.OWL_COOKED_MEAT);
+                        entries.add(ModItems.HARPY_RAW_MEAT);
+                        entries.add(ModItems.HARPY_COOKED_MEAT);
 
                     }).build());
 

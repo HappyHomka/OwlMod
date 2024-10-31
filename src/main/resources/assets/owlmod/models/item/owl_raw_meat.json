@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "owlmod:item/owl_feather"
+    "layer0": "owlmod:item/owl_raw_meat"
   }
 }
