@@ -1,0 +1,14 @@
+{
+  "item.owlmod.owl_raw_meat": "生の梟",
+  "item.owlmod.owl_cooked_meat": "焼き梟",
+  "item.owlmod.harpy_raw_meat": "生のハーピー",
+  "item.owlmod.harpy_cooked_meat": "焼きハーピー",
+
+
+  "item.owlmod.owl_feather": "フクロウの羽は",
+  "item.owlmod.owl_boss_feather": "銅の梟羽は",
+
+
+  "item.owlmod.owl_icon": "フクロウMOD",
+  "itemgroup.owlmod.owl_mod_items": "フクロウMOD"
+}
