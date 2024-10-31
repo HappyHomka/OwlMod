@@ -5,6 +5,10 @@
   "item.owlmod.harpy_cooked_meat": "Жаренное мясо Гарпии",
 
 
+  "item.owlmod.owl_feather": "Перо совы",
+  "item.owlmod.owl_boss_feather": "Перо Босса совы",
+
+
   "item.owlmod.owl_icon": "Иконка мода",
   "itemgroup.owlmod.owl_mod_items": "Мод на сов"
 }

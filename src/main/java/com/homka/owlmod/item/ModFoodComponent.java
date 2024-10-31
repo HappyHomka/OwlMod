@@ -5,6 +5,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
 public class ModFoodComponent {
+    // Adding Food Stats for food items
     public static final FoodComponent OWL_RAW_MEAT = new FoodComponent.Builder()
             .nutrition(2)
             .saturationModifier(0.3f).build();

@@ -10,7 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-
+    //Adding Item Groups
     public static final ItemGroup OWL_MOD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(OwlMod.MOD_ID, "owl_mod_items"),
             FabricItemGroup.builder()
@@ -18,6 +18,7 @@ public class ModItemGroup {
                     .displayName(Text.translatable("itemgroup.owlmod.owl_mod_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.OWL_FEATHER);
+                        entries.add(ModItems.OWL_BOSS_FEATHER);
                         entries.add(ModItems.OWL_RAW_MEAT);
                         entries.add(ModItems.OWL_COOKED_MEAT);
                         entries.add(ModItems.HARPY_RAW_MEAT);
@@ -25,7 +26,7 @@ public class ModItemGroup {
 
                     }).build());
 
-
+    // Helpers and Init Methods
     public static void registerItemGroups(){
         OwlMod.LOGGER.info("Registering Item Groups for " + OwlMod.MOD_ID);
     }
