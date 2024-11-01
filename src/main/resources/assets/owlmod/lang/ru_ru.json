@@ -10,5 +10,15 @@
 
 
   "item.owlmod.owl_icon": "Иконка мода",
-  "itemgroup.owlmod.owl_mod_items": "Мод на сов"
+  "itemgroup.owlmod.owl_mod_items": "Мод на сов",
+
+  
+  "block.owlmod.platinum_ore_block": "Platinum Ore Block",
+  "block.owlmod.platinum_block": "Platinum Block",
+  "block.owlmod.platinum_deepslate_ore_block": "Platinum Deepslate Ore Block",
+  "block.owlmod.platinum_raw_block": "Raw Platinum block",
+
+  "item.owlmod.platinum_ingot": "Platinum Ingot",
+  "item.owlmod.platinum_nugget": "Platinum Nugget",
+  "item.owlmod.platinum_raw_ore": "Platinum Raw Ore"
 }
