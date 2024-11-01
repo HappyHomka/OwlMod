@@ -19,7 +19,7 @@ public class ModFoodComponent {
     public static final FoodComponent HARPY_RAW_MEAT = new FoodComponent.Builder()
             .nutrition(2)
             .saturationModifier(0.3f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.POISON,200,0),1.0f).build();
+            .statusEffect(new StatusEffectInstance(StatusEffects.POISON,600,0),1.0f).build();
 
     public static final FoodComponent HARPY_COOKED_MEAT = new FoodComponent.Builder()
             .nutrition(8)

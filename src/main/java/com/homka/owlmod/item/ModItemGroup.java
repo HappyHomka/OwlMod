@@ -1,6 +1,7 @@
 package com.homka.owlmod.item;
 
 import com.homka.owlmod.OwlMod;
+import com.homka.owlmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -23,6 +24,15 @@ public class ModItemGroup {
                         entries.add(ModItems.OWL_COOKED_MEAT);
                         entries.add(ModItems.HARPY_RAW_MEAT);
                         entries.add(ModItems.HARPY_COOKED_MEAT);
+
+                        entries.add(ModBlocks.PLATINUM_BLOCK);
+                        entries.add(ModBlocks.PLATINUM_ORE_BLOCK);
+                        entries.add(ModBlocks.PLATINUM_DEEPSLATE_ORE_BLOCK);
+                        entries.add(ModBlocks.PLATINUM_RAW_BLOCK);
+
+                        entries.add(ModItems.PLATINUM_NUGGET);
+                        entries.add(ModItems.PLATINUM_RAW_ORE);
+                        entries.add(ModItems.PLATINUM_INGOT);
 
                     }).build());
 

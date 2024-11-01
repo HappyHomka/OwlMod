@@ -1,5 +1,6 @@
 package com.homka.owlmod;
 
+import com.homka.owlmod.block.ModBlocks;
 import com.homka.owlmod.item.ModItemGroup;
 import com.homka.owlmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -13,8 +14,8 @@ public class OwlMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
-
 		ModItemGroup.registerItemGroups();
 	}
 }

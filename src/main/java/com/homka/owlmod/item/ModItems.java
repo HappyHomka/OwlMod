@@ -23,6 +23,11 @@ public class ModItems {
     public static final Item OWL_BOSS_FEATHER = registerItem("owl_boss_feather", new Item(new Item.Settings()));
 
 
+    public static final Item PLATINUM_RAW_ORE = registerItem("platinum_raw_ore", new Item(new Item.Settings()));
+    public static final Item PLATINUM_INGOT = registerItem("platinum_ingot", new Item(new Item.Settings()));
+    public static final Item PLATINUM_NUGGET = registerItem("platinum_nugget", new Item(new Item.Settings()));
+
+
     // Helpers and Init Methods
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(OwlMod.MOD_ID, name), item);
@@ -37,5 +42,14 @@ public class ModItems {
             entries.add(HARPY_RAW_MEAT);
             entries.add(HARPY_COOKED_MEAT);
         });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(OWL_FEATHER);
+            entries.add(OWL_BOSS_FEATHER);
+            entries.add(PLATINUM_RAW_ORE);
+            entries.add(PLATINUM_INGOT);
+            entries.add(PLATINUM_NUGGET);
+        });
+
     }
 }
