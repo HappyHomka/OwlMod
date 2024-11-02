@@ -1,6 +1,9 @@
 package com.homka.owlmod.block;
 
 import com.homka.owlmod.OwlMod;
+import com.homka.owlmod.block.custom.OwlStatue1;
+import com.homka.owlmod.block.custom.OwlStatue2;
+import com.homka.owlmod.block.custom.OwlStatue3;
 import com.homka.owlmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
@@ -35,6 +38,26 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.METAL)));
 
+    public static final Block OWL_STATUE_ONE = registerBlock("owl_statue_one",
+            new OwlStatue1(AbstractBlock.Settings.create().strength(3f,3f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.WOOD)
+            ));
+
+    public static final Block OWL_STATUE_TWO = registerBlock("owl_statue_two",
+            new OwlStatue2(AbstractBlock.Settings.create().strength(3f,3f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.WOOD)
+            ));
+
+    public static final Block OWL_STATUE_THREE = registerBlock("owl_statue_three",
+            new OwlStatue3(AbstractBlock.Settings.create().strength(3f,3f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.WOOD)
+            ));
+
+
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
         return Registry.register(Registries.BLOCK, Identifier.of(OwlMod.MOD_ID,name),block);
@@ -53,7 +76,11 @@ public class ModBlocks {
             entries.add(PLATINUM_BLOCK);
             entries.add(PLATINUM_DEEPSLATE_ORE_BLOCK);
             entries.add(PLATINUM_RAW_BLOCK);
+            entries.add(OWL_STATUE_ONE);
+            entries.add(OWL_STATUE_TWO);
+            entries.add(OWL_STATUE_THREE);
         });
+
     }
 
 }

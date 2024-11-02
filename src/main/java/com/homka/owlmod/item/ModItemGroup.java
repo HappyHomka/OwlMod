@@ -34,6 +34,10 @@ public class ModItemGroup {
                         entries.add(ModBlocks.PLATINUM_DEEPSLATE_ORE_BLOCK);
                         entries.add(ModBlocks.PLATINUM_RAW_BLOCK);
 
+                        entries.add(ModBlocks.OWL_STATUE_ONE);
+                        entries.add(ModBlocks.OWL_STATUE_TWO);
+                        entries.add(ModBlocks.OWL_STATUE_THREE);
+
                         entries.add(ModItems.PLATINUM_NUGGET);
                         entries.add(ModItems.PLATINUM_RAW_ORE);
                         entries.add(ModItems.PLATINUM_INGOT);

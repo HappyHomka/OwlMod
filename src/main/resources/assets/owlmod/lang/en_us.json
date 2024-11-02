@@ -18,6 +18,9 @@
   "block.owlmod.platinum_block": "Platinum Block",
   "block.owlmod.platinum_deepslate_ore_block": "Platinum Deepslate Ore Block",
   "block.owlmod.platinum_raw_block": "Raw Platinum block",
+  "block.owlmod.owl_statue_one": "Owl Statue 1",
+  "block.owlmod.owl_statue_two":  "Owl Statue 2",
+  "block.owlmod.owl_statue_three":  "Owl Statue 3",
 
   "item.owlmod.owl_icon": "Owl Mod Icon",
   "itemgroup.owlmod.owl_mod_items": "Owl Mod"
