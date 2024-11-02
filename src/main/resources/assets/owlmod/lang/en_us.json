@@ -3,21 +3,23 @@
   "item.owlmod.owl_cooked_meat": "Cooked Owl Meat",
   "item.owlmod.harpy_raw_meat": "Raw Harpy Meat",
   "item.owlmod.harpy_cooked_meat": "Cooked Harpy Meat",
-
-
+  "item.owlmod.platinum_ingot": "Platinum Ingot",
+  "item.owlmod.platinum_nugget": "Platinum Nugget",
+  "item.owlmod.platinum_raw_ore": "Platinum Raw Ore",
   "item.owlmod.owl_feather": "Owl Feather",
   "item.owlmod.owl_boss_feather": "Copper owl Feather",
-
-
-  "item.owlmod.owl_icon": "Owl Mod Icon",
-  "itemgroup.owlmod.owl_mod_items": "Owl Mod",
+  "item.owlmod.harpy_eye": "Harpy Eye",
+  "item.owlmod.owl_beak": "Owl Beak",
+  "item.owlmod.owl_eye": "Owl Eye",
+  "item.owlmod.owl_alloy": "Owl Alloy",
+  "item.owlmod.owl_copper": "Owl Copper",
 
   "block.owlmod.platinum_ore_block": "Platinum Ore Block",
   "block.owlmod.platinum_block": "Platinum Block",
   "block.owlmod.platinum_deepslate_ore_block": "Platinum Deepslate Ore Block",
   "block.owlmod.platinum_raw_block": "Raw Platinum block",
 
-  "item.owlmod.platinum_ingot": "Platinum Ingot",
-  "item.owlmod.platinum_nugget": "Platinum Nugget",
-  "item.owlmod.platinum_raw_ore": "Platinum Raw Ore"
+  "item.owlmod.owl_icon": "Owl Mod Icon",
+  "itemgroup.owlmod.owl_mod_items": "Owl Mod"
+
 }

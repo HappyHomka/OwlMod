@@ -18,14 +18,18 @@ public class ModItems {
     public static final Item HARPY_RAW_MEAT = registerItem("harpy_raw_meat",new Item(new Item.Settings().food(ModFoodComponent.HARPY_RAW_MEAT)));
     public static final Item HARPY_COOKED_MEAT = registerItem("harpy_cooked_meat",new Item(new Item.Settings().food(ModFoodComponent.HARPY_COOKED_MEAT)));
 
-
     public static final Item OWL_FEATHER = registerItem("owl_feather", new Item(new Item.Settings()));
     public static final Item OWL_BOSS_FEATHER = registerItem("owl_boss_feather", new Item(new Item.Settings()));
-
+    public static final Item OWL_CLAW = registerItem("owl_claw",new Item(new Item.Settings()));
+    public static final Item HARPY_EYE = registerItem("harpy_eye",new Item(new Item.Settings()));
+    public static final Item OWL_BEAK = registerItem("owl_beak",new Item(new Item.Settings()));
+    public static final Item OWL_EYE = registerItem("owl_eye",new Item(new Item.Settings()));
 
     public static final Item PLATINUM_RAW_ORE = registerItem("platinum_raw_ore", new Item(new Item.Settings()));
     public static final Item PLATINUM_INGOT = registerItem("platinum_ingot", new Item(new Item.Settings()));
     public static final Item PLATINUM_NUGGET = registerItem("platinum_nugget", new Item(new Item.Settings()));
+    public static final Item OWL_ALLOY = registerItem("owl_alloy", new Item(new Item.Settings()));
+    public static final Item OWL_COPPER = registerItem("owl_copper", new Item(new Item.Settings()));
 
 
     // Helpers and Init Methods
@@ -46,9 +50,15 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(OWL_FEATHER);
             entries.add(OWL_BOSS_FEATHER);
+            entries.add(OWL_BEAK);
+            entries.add(OWL_EYE);
+            entries.add(OWL_CLAW);
+            entries.add(HARPY_EYE);
             entries.add(PLATINUM_RAW_ORE);
             entries.add(PLATINUM_INGOT);
             entries.add(PLATINUM_NUGGET);
+            entries.add(OWL_ALLOY);
+            entries.add(OWL_COPPER);
         });
 
     }

@@ -24,6 +24,10 @@ public class ModItemGroup {
                         entries.add(ModItems.OWL_COOKED_MEAT);
                         entries.add(ModItems.HARPY_RAW_MEAT);
                         entries.add(ModItems.HARPY_COOKED_MEAT);
+                        entries.add(ModItems.HARPY_EYE);
+                        entries.add(ModItems.OWL_CLAW);
+                        entries.add(ModItems.OWL_BEAK);
+                        entries.add(ModItems.OWL_EYE);
 
                         entries.add(ModBlocks.PLATINUM_BLOCK);
                         entries.add(ModBlocks.PLATINUM_ORE_BLOCK);
@@ -33,6 +37,8 @@ public class ModItemGroup {
                         entries.add(ModItems.PLATINUM_NUGGET);
                         entries.add(ModItems.PLATINUM_RAW_ORE);
                         entries.add(ModItems.PLATINUM_INGOT);
+                        entries.add(ModItems.OWL_ALLOY);
+                        entries.add(ModItems.OWL_COPPER);
 
                     }).build());
 

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 900,
+  "experience": 6.3,
+  "group": "platinum_block",
+  "ingredient":[
+    {
+      "item": "owlmod:platinum_raw_block"
+    }
+  ],
+  "result": {
+    "id": "owlmod:platinum_block"
+  }
+}
