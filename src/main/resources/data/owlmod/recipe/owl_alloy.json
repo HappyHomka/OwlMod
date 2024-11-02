@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "owlmod:platinum_ingot"
+    },
+    "X": {
+      "item": "owlmod:owl_copper"
+    }
+  },
+  "pattern": [
+    "#X ",
+    "X# ",
+    "   "
+  ],
+  "result": {
+    "count": 2,
+    "id": "owlmod:owl_alloy"
+  }
+}

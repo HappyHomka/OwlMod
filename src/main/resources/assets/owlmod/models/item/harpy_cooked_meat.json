@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "owlmod:item/owl_cooked_meat"
+    "layer0": "owlmod:item/harpy_cooked_meat"
   }
 }
