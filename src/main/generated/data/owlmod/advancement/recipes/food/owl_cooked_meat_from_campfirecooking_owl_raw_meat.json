@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_owl_raw_meat": {
+      "conditions": {
+        "items": [
+          {
+            "items": "owlmod:owl_raw_meat"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:owl_cooked_meat_from_campfirecooking_owl_raw_meat"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_owl_raw_meat"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:owl_cooked_meat_from_campfirecooking_owl_raw_meat"
+    ]
+  }
+}

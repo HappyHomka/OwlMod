@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "owl_cooked_meat",
+  "ingredient": {
+    "item": "owlmod:owl_raw_meat"
+  },
+  "result": {
+    "id": "owlmod:owl_cooked_meat"
+  }
+}

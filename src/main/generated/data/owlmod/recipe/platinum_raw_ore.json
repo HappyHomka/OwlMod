@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "owlmod:platinum_raw_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "owlmod:platinum_raw_ore"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "harpy_cooked_meat",
+  "ingredient": {
+    "item": "owlmod:harpy_raw_meat"
+  },
+  "result": {
+    "id": "owlmod:harpy_cooked_meat"
+  }
+}

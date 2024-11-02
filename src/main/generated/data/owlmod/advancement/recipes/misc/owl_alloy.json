@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_owl_copper": {
+      "conditions": {
+        "items": [
+          {
+            "items": "owlmod:owl_copper"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "owlmod:owl_alloy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_owl_copper"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "owlmod:owl_alloy"
+    ]
+  }
+}
