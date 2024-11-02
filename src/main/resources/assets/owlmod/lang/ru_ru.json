@@ -18,6 +18,9 @@
   "block.owlmod.platinum_block": "Блок платины",
   "block.owlmod.platinum_deepslate_ore_block": "Платиновая Глубинная руда",
   "block.owlmod.platinum_raw_block": "Сырой платиновый блок",
+  "block.owlmod.owl_statue_one": "Owl Statue 1",
+  "block.owlmod.owl_statue_two":  "Owl Statue 2",
+  "block.owlmod.owl_statue_three":  "Owl Statue 3",
 
   "item.owlmod.owl_icon": "Иконка мода",
   "itemgroup.owlmod.owl_mod_items": "Мод на сов"
