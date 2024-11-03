@@ -3,6 +3,7 @@ package com.homka.owlmod;
 import com.homka.owlmod.block.ModBlocks;
 import com.homka.owlmod.item.ModItemGroup;
 import com.homka.owlmod.item.ModItems;
+import com.homka.owlmod.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,5 +18,6 @@ public class OwlMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroup.registerItemGroups();
+		ModSounds.registerSound();
 	}
 }

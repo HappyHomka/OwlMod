@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": {"model": "owlmod:block/owl_statue_three","y": 0},
+		"facing=east": {"model": "owlmod:block/owl_statue_three","y": 90},
+		"facing=south": {"model": "owlmod:block/owl_statue_three","y": 180},
+		"facing=west": {"model": "owlmod:block/owl_statue_three","y": 270}
+	}
+}

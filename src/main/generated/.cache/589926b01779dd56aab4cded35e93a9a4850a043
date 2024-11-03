@@ -1,5 +1,0 @@
-// 1.21	2024-11-03T00:00:48.9868867	OwlMod/Tags for minecraft:block
-4fcd1707a443346bbdbb05fa49f9879cbfe16504 data\minecraft\tags\block\needs_diamond_tool.json
-a2861551abba052b2ae007bf8350433e2a3f8f6b data\minecraft\tags\block\needs_stone_tool.json
-f03272aee19c885feda4ec84e6d3e248e9ded7fd data\minecraft\tags\block\mineable\pickaxe.json
-38f6fd46e86b77dc42d0b6369edc982dfeaf93c6 data\minecraft\tags\block\needs_iron_tool.json

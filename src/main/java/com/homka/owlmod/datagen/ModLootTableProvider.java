@@ -32,6 +32,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.OWL_STATUE_TWO);
         addDrop(ModBlocks.OWL_STATUE_THREE);
 
+
         addDrop(ModBlocks.PLATINUM_ORE_BLOCK,oreDrops(ModBlocks.PLATINUM_ORE_BLOCK, ModItems.PLATINUM_RAW_ORE));
 
         addDrop(ModBlocks.PLATINUM_DEEPSLATE_ORE_BLOCK,multipleOreDrops(ModBlocks.PLATINUM_DEEPSLATE_ORE_BLOCK, ModItems.PLATINUM_RAW_ORE,2,5));
