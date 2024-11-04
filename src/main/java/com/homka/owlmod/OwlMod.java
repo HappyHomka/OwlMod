@@ -1,6 +1,7 @@
 package com.homka.owlmod;
 
 import com.homka.owlmod.block.ModBlocks;
+import com.homka.owlmod.block.ModBlockEntities;
 import com.homka.owlmod.item.ModItemGroup;
 import com.homka.owlmod.item.ModItems;
 import com.homka.owlmod.sound.ModSounds;
@@ -19,5 +20,6 @@ public class OwlMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroup.registerItemGroups();
 		ModSounds.registerSound();
+		ModBlockEntities.registerModBE();
 	}
 }

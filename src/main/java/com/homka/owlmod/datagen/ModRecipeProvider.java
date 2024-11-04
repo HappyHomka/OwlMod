@@ -31,6 +31,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(exporter,PLATINUM_INGOT_SMELTABLES, RecipeCategory.MISC,ModItems.PLATINUM_INGOT,0.25f,200,"platinum_ingot");
         offerBlasting(exporter,PLATINUM_INGOT_SMELTABLES, RecipeCategory.MISC,ModItems.PLATINUM_INGOT,0.25f,100,"platinum_ingot");
 
+        offerSmelting(exporter,List.of(ModItems.OWL_BOSS_FEATHER),RecipeCategory.MISC,ModItems.OWL_COPPER,0.25f,200,"owl_copper");
+        offerBlasting(exporter,List.of(ModItems.OWL_BOSS_FEATHER),RecipeCategory.MISC,ModItems.OWL_COPPER,0.25f,100,"owl_copper");
+
         offerSmelting(exporter,List.of(ModBlocks.PLATINUM_RAW_BLOCK),RecipeCategory.MISC,ModBlocks.PLATINUM_BLOCK,2f,1800,"platinum_block");
         offerBlasting(exporter,List.of(ModBlocks.PLATINUM_RAW_BLOCK),RecipeCategory.MISC,ModBlocks.PLATINUM_BLOCK,2f,900,"platinum_block");
 
