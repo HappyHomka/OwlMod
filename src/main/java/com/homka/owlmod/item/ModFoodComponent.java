@@ -14,8 +14,6 @@ public class ModFoodComponent {
             .nutrition(4)
             .saturationModifier(0.3f).build();
 
-
-
     public static final FoodComponent HARPY_RAW_MEAT = new FoodComponent.Builder()
             .nutrition(2)
             .saturationModifier(0.3f)
@@ -24,4 +22,8 @@ public class ModFoodComponent {
     public static final FoodComponent HARPY_COOKED_MEAT = new FoodComponent.Builder()
             .nutrition(8)
             .saturationModifier(0.3f).build();
+
+    public static final FoodComponent HARPY_EYE = new FoodComponent.Builder()
+            .nutrition(2)
+            .saturationModifier(0.1f).build();
 }

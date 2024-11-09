@@ -10,7 +10,7 @@ import net.minecraft.util.math.BlockPos;
 
 public class OwlStatueOneBlockEntity extends BlockEntity implements TickableBlockEntity {
 
-    private int cooldown_ticks = 300;
+    private int cooldown_ticks = 1200 + 2400;
     private int ticks = 0;
     private boolean ready = true;
 

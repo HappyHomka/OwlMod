@@ -20,7 +20,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PLATINUM_BLOCK)
                 .add(ModBlocks.PLATINUM_ORE_BLOCK)
                 .add(ModBlocks.PLATINUM_RAW_BLOCK)
-                .add(ModBlocks.PLATINUM_DEEPSLATE_ORE_BLOCK)
                 .add(ModBlocks.OWL_STATUE_ONE)
                 .add(ModBlocks.OWL_STATUE_TWO)
                 .add(ModBlocks.OWL_STATUE_THREE);
@@ -34,9 +33,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PLATINUM_BLOCK)
                 .add(ModBlocks.PLATINUM_ORE_BLOCK)
                 .add(ModBlocks.PLATINUM_RAW_BLOCK);
-
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.PLATINUM_DEEPSLATE_ORE_BLOCK);
 
     }
 }

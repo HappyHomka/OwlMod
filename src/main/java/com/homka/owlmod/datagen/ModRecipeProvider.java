@@ -2,17 +2,19 @@ package com.homka.owlmod.datagen;
 
 import com.homka.owlmod.block.ModBlocks;
 import com.homka.owlmod.item.ModItems;
+import com.mojang.datafixers.types.templates.Tag;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.*;
 import net.minecraft.recipe.CampfireCookingRecipe;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SmokingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -22,8 +24,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         super(output, registriesFuture);
     }
 
-    List<ItemConvertible> PLATINUM_INGOT_SMELTABLES = List.of(ModItems.PLATINUM_RAW_ORE, ModBlocks.PLATINUM_ORE_BLOCK,
-            ModBlocks.PLATINUM_DEEPSLATE_ORE_BLOCK);
+    List<ItemConvertible> PLATINUM_INGOT_SMELTABLES = List.of(ModItems.PLATINUM_RAW_ORE, ModBlocks.PLATINUM_ORE_BLOCK);
 
     @Override
     public void generate(RecipeExporter exporter) {
@@ -81,17 +82,51 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModItems.PLATINUM_INGOT)
                 .criterion(hasItem(ModItems.PLATINUM_INGOT),conditionsFromItem(ModItems.PLATINUM_INGOT))
                 .offerTo(exporter,"platinum_nugget_from_platinum_ingot");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.OWL_STATUE_ONE)
+                .pattern("# #")
+                .pattern("IHI")
+                .pattern("PPP")
+                .input('#',ModItems.OWL_COPPER)
+                .input('I', Items.IRON_INGOT)
+                .input('H', ModItems.HARPY_RAW_MEAT)
+                .input('P', ItemTags.PLANKS)
+                .criterion(hasItem(ModItems.OWL_COPPER),conditionsFromItem(ModItems.OWL_COPPER))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.OWL_STATUE_TWO)
+                .pattern("# #")
+                .pattern("IHI")
+                .pattern("TPT")
+                .input('#',ModItems.OWL_COPPER)
+                .input('I', Items.VINE)
+                .input('H', ModItems.HARPY_EYE)
+                .input('P', ItemTags.PLANKS)
+                .input('T', ModItems.PLATINUM_INGOT)
+                .criterion(hasItem(ModItems.OWL_COPPER),conditionsFromItem(ModItems.OWL_COPPER))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.OWL_STATUE_THREE)
+                .pattern("# #")
+                .pattern("QPQ")
+                .pattern("HHH")
+                .input('#',ModItems.OWL_COPPER)
+                .input('Q', Items.QUARTZ)
+                .input('H', ModItems.HARPY_RAW_MEAT)
+                .input('P', ModBlocks.PLATINUM_BLOCK)
+                .criterion(hasItem(ModItems.OWL_COPPER),conditionsFromItem(ModItems.OWL_COPPER))
+                .offerTo(exporter);
     }
 
-    public static void offerSmoking(
-            RecipeExporter exporter, List<ItemConvertible> inputs, RecipeCategory category, ItemConvertible output, float experience, int cookingTime, String group
-    ) {
+    public static void offerSmoking(RecipeExporter exporter, List<ItemConvertible> inputs, RecipeCategory category,
+                                    ItemConvertible output, float experience, int cookingTime, String group)
+    {
         offerMultipleOptions(exporter, RecipeSerializer.SMOKING, SmokingRecipe::new, inputs, category, output, experience, cookingTime, group, "_from_smoking");
     }
 
-    public static void offerCampFire(
-            RecipeExporter exporter, List<ItemConvertible> inputs, RecipeCategory category, ItemConvertible output, float experience, int cookingTime, String group
-    ) {
+    public static void offerCampFire(RecipeExporter exporter, List<ItemConvertible> inputs, RecipeCategory category,
+                                     ItemConvertible output, float experience, int cookingTime, String group)
+    {
         offerMultipleOptions(exporter, RecipeSerializer.CAMPFIRE_COOKING, CampfireCookingRecipe::new, inputs, category, output, experience, cookingTime, group, "_from_campfirecooking");
     }
 }

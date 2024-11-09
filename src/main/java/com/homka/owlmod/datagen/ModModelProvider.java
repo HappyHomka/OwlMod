@@ -14,7 +14,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_DEEPSLATE_ORE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_ORE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_RAW_BLOCK);
     }

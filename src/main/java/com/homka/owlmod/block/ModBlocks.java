@@ -23,11 +23,6 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)));
 
-    public static final Block PLATINUM_DEEPSLATE_ORE_BLOCK = registerWithItem("platinum_deepslate_ore_block",
-            new Block(AbstractBlock.Settings.create().strength(4.5f,3f)
-                    .requiresTool()
-                    .sounds(BlockSoundGroup.DEEPSLATE)));
-
     public static final Block PLATINUM_BLOCK = registerWithItem("platinum_block",
             new Block(AbstractBlock.Settings.create().strength(4f,3f)
                     .requiresTool()
@@ -74,7 +69,6 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(PLATINUM_ORE_BLOCK);
             entries.add(PLATINUM_BLOCK);
-            entries.add(PLATINUM_DEEPSLATE_ORE_BLOCK);
             entries.add(PLATINUM_RAW_BLOCK);
             entries.add(OWL_STATUE_ONE);
             entries.add(OWL_STATUE_TWO);
