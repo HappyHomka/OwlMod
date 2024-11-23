@@ -16,5 +16,23 @@
     "sounds": [
       "owlmod:owl_statue_use_three"
     ]
+  },
+  "sich_ambient": {
+    "subtitle": "sounds.owlmod.elf_owl_ambient",
+    "sounds": [
+      "owlmod:sich_ambient"
+    ]
+  },
+  "sich_hurt": {
+    "subtitle": "sounds.owlmod.elf_owl_hurt",
+    "sounds": [
+      "owlmod:sich_hurt"
+    ]
+  },
+  "sich_death": {
+    "subtitle": "sounds.owlmod.elf_owl_death",
+    "sounds": [
+      "owlmod:sich_hurt"
+    ]
   }
 }

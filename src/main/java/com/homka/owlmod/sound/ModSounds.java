@@ -19,6 +19,11 @@ public class ModSounds {
     public static final SoundEvent OWL_STATUE_HIT = registerSoundEvent("owl_statue_placement");
     public static final SoundEvent OWL_STATUE_FALL = registerSoundEvent("owl_statue_placement");
 
+    public static final SoundEvent SICH_AMBIENT = registerSoundEvent("sich_ambient");
+    public static final SoundEvent SICH_HURT = registerSoundEvent("sich_hurt");
+    public static final SoundEvent SICH_DEATH = registerSoundEvent("sich_hurt");
+    public static final SoundEvent SICH_STEP = registerSoundEvent("sich_walking");
+
     public static final BlockSoundGroup OWL_STATUE_SOUND = new BlockSoundGroup(1f,1f, OWL_STATUE_BREAK,
             OWL_STATUE_STEP,OWL_STATUE_PLACE,OWL_STATUE_HIT,OWL_STATUE_FALL);
 
